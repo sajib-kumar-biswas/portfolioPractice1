@@ -85,6 +85,7 @@ img {
     background-color: var(--color-white);
     transition: var(--transition);
     margin: 2rem 0;
+    display: inline-block;
 }
 
 .btn:hover {
@@ -152,4 +153,119 @@ nav ul li a {
 
 nav ul li a:hover {
     color: var(--color-primary);
+}
+
+
+/* ================ landing section =================== */
+
+section.landing {
+    display: grid;
+    place-items: center;
+}
+
+section.landing .container {
+    display: grid;
+    grid-template-columns: 5rem auto 28rem;
+    gap: 2rem;
+}
+
+section.landing .socials {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-top: 5rem;
+}
+
+section.landing .socials a {
+    font-size: 1.2rem;
+    background-color: var(--color-light);
+    color: black;
+    padding: 0.3rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+section.landing .socials a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+section.landing .info h1{
+    margin: 0;
+    text-align: left;
+}
+
+section.landing .info h3 {
+    margin: 2.4rem 0 1rem;
+}
+
+section.landing .profile-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+section.landing .profile-area .outer-circle {
+    position: relative;
+    width: 26rem;
+    height: 26rem;
+    border-radius: 50%;
+    border: 1px solid var(--color-primary);
+    animation-name: move;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+section.landing .profile-area .outer-circle span {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    box-shadow: 0 0 1rem var(--color-primary-light);
+    position: absolute;
+}
+
+section.landing .profile-area .outer-circle span:nth-child(1) {
+    left: calc(50% - 2rem);
+    top: -2rem;
+}
+
+section.landing .profile-area .outer-circle span:nth-child(2) {
+    top: calc(50% - 2rem);
+    right: -2rem;
+}
+
+section.landing .profile-area .outer-circle span:nth-child(3) {
+    left: calc(50% - 2rem);
+    bottom: -2rem;
+}
+
+section.landing .profile-area .outer-circle span:nth-child(4) {
+    top: calc(50% - 2rem);
+    left: -2rem;
+}
+
+section.landing .profile-area .inner-circle {
+    position: absolute;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 50%;
+    overflow: hidden;
 }
