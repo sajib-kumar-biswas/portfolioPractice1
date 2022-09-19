@@ -33,7 +33,11 @@ body {
     max-width: 100vw;
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     color: var(--color-black);
     line-height: 1.2;
 }
@@ -41,15 +45,19 @@ h1,h2,h3,h4,h5 {
 h1 {
     font-size: 3.8rem;
 }
+
 h2 {
     font-size: 2.6rem;
 }
+
 h3 {
     font-size: 1.6rem;
 }
+
 h4 {
     font-size: 1.2rem;
 }
+
 h5 {
     font-size: 0.86rem;
 }
@@ -115,7 +123,7 @@ nav {
 nav .container {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     height: 100%;
 }
 
@@ -132,8 +140,9 @@ nav ul .active {
     background-color: var(--color-primary);
     color: var(--color-white);
 }
+
 nav ul .active:hover {
-    color:  var(--color-black);
+    color: var(--color-black);
 }
 
 nav h3 {
@@ -195,7 +204,7 @@ section.landing .socials a:hover {
     color: var(--color-white);
 }
 
-section.landing .info h1{
+section.landing .info h1 {
     margin: 0;
     text-align: left;
 }
@@ -268,4 +277,313 @@ section.landing .profile-area .inner-circle {
     width: 18rem;
     border-radius: 50%;
     overflow: hidden;
+}
+
+/* ====================== about section ================= */
+
+section.about .container {
+    display: grid;
+    grid-template-columns: 26rem auto;
+    gap: 5rem;
+}
+
+section.about .container .info p {
+    margin-bottom: 1rem;
+}
+
+section.about .container .info .read-more-content {
+    display: none;
+}
+
+section.about .container .info .read-more {
+    display: block;
+    margin: 1rem 0 2rem;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+section.about .container .info .read-more:hover {
+    text-decoration: underline;
+}
+
+/* ==================== skills section ======================*/
+
+section.skills .container {
+    width: 50%;
+}
+
+section.skills .container .skill .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 1.6rem;
+    cursor: pointer;
+}
+
+section.skills .container .skill .head h4 {
+    color: var(--color-white);
+}
+
+section.skills .container .skill .head .left {
+    display: flex;
+    gap: 1rem;
+}
+
+section.skills .container .skill .item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-light);
+    margin-bottom: 0.3rem;
+    transition: var(--transition);
+}
+
+section.skills .container .skill .item:hover {
+    background-color: var(--color-white);
+}
+
+section.skills .container .skill .item .progress-area {
+    display: flex;
+    gap: 1rem;
+    height: 3rem;
+    align-items: center;
+}
+
+section.skills .container .skill .item .progress-bar {
+    width: 100%;
+    height: 1rem;
+    background-color: var(--color-primary-light);
+    position: relative;
+}
+
+section.skills .container .skill .item .progress-bar .progress {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: var(--color-primary);
+}
+
+/* UI/UX Design */
+
+section.skills .container .skill:nth-child(1) .item:nth-child(1) .progress-bar .progress {
+    width: 50%;
+}
+
+section.skills .container .skill:nth-child(1) .item:nth-child(2) .progress-bar .progress {
+    width: 33%;
+}
+
+section.skills .container .skill:nth-child(1) .item:nth-child(3) .progress-bar .progress {
+    width: 33%;
+}
+
+/* frontend skill */
+
+section.skills .container .skill:nth-child(2) .item:nth-child(1) .progress-bar .progress {
+    width: 85%;
+}
+
+section.skills .container .skill:nth-child(2) .item:nth-child(2) .progress-bar .progress {
+    width: 75%;
+}
+
+section.skills .container .skill:nth-child(2) .item:nth-child(3) .progress-bar .progress {
+    width: 80%;
+}
+
+/* backend skill */
+
+section.skills .container .skill:nth-child(3) .item:nth-child(1) .progress-bar .progress {
+    width: 50%;
+}
+
+section.skills .container .skill:nth-child(3) .item:nth-child(2) .progress-bar .progress {
+    width: 70%;
+}
+
+section.skills .container .skill:nth-child(3) .item:nth-child(3) .progress-bar .progress {
+    width: 33%;
+}
+
+/* control management system skill */
+
+section.skills .container .skill:nth-child(4) .item:nth-child(1) .progress-bar .progress {
+    width: 33%;
+}
+
+section.skills .container .skill:nth-child(4) .item:nth-child(2) .progress-bar .progress {
+    width: 33%;
+}
+
+section.skills .container .skill:nth-child(4) .item:nth-child(3) .progress-bar .progress {
+    width: 33%;
+}
+
+/* ====================== services section =====================*/
+
+section.services {
+    background-color: var(--color-light);
+}
+
+section.services .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+section.services .container .service {
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+/* section.services .container .service h3 {
+    text-align: center;
+} */
+
+section.services .container .service span {
+    height: 4rem;
+    width: 4rem;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+section.services .container .service:hover {
+    box-shadow: 0 3rem 3rem var(--color-primary-light);
+}
+
+section.services .container .service:nth-child(2) span {
+    background-color: var(--color-warning);
+}
+
+section.services .container .service:nth-child(3) span {
+    background-color: var(--color-success);
+}
+
+/* ============= end of services section ================= */
+
+/* start of recent works or portfolio section */
+
+section.recent-work h1 {
+    text-align: left;
+    width: 65%;
+    margin: 3rem 0 1rem;
+}
+
+section.recent-work .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+section.recent-work .projects .project {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+section.recent-work .projects .project .action {
+    display: flex;
+    gap: 2rem;
+}
+
+section.recent-work .projects .project .action a {
+    color: var(--color-primary);
+}
+
+section.recent-work .projects .project .action a:hover {
+    text-decoration: underline;
+}
+
+/* end of recent works section */
+
+/* start of testimonial section */
+
+section.testimonials {
+    background-color: var(--color-light);
+}
+
+section.testimonials .container {
+    width: 44rem;
+}
+
+section.testimonials .container .carousel {
+    display: flex;
+    /* flex-direction: column;
+    gap: 1rem; */
+}
+
+section.testimonials .container .carousel .testimonial {
+    background-color: var(--color-white);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    /* cursor: pointer; */
+    font-size: 0.9rem;
+}
+
+section.testimonials .container .carousel .testimonial .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+section.testimonials .container .carousel .testimonial .head .left {
+    display: flex;
+    gap: 1rem;
+}
+
+section.testimonials .container .carousel .testimonial .head .left img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+section.testimonials .container .carousel .testimonial .head .right {
+    color: var(--color-primary)
+}
+
+section.testimonials .container .carousel .testimonial .head .right span {
+    font-size: 1.2rem;
+}
+
+/* ================== SWIPER ==================== */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    /* text-align: center; */
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    /* display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; */
 }

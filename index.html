@@ -14,7 +14,14 @@
         <!-- Google Material Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Sharp" rel="stylesheet">
         <!-- font awesome icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- swiper js -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
         <!-- my stylesheet -->
         <link rel="stylesheet" href="style.css">
         <title>SAJIB's Portfolio Website</title>
@@ -29,11 +36,11 @@
                 </a>
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Let's talk</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Let's talk</a></li>
                 </ul>
                 <button class="btn"><span class="material-symbols-sharp">menu</span></button>
                 <button class="btn"><span class="material-symbols-sharp">close</span></button>
@@ -46,14 +53,17 @@
                 <div class="socials">
                     <a href="https://www.facebook.com/sajibkumar.biswas.583"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="https://github.com/sajib-kumar-biswas"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/sajib-biswas-726990228/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.linkedin.com/in/sajib-biswas-726990228/"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
                 </div>
 
                 <div class="info">
                     <h1>Fullstack Web Developer</h1>
                     <h3>Hi, I'm sajib kumar biswas.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deserunt tenetur esse magnam quae nam commodi laboriosam nobis itaque reprehenderit asperiores iusto quo nihil fugiat recusandae, aliquid iure quia ratione.</p>
-                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deserunt tenetur esse magnam quae
+                        nam commodi laboriosam nobis itaque reprehenderit asperiores iusto quo nihil fugiat recusandae,
+                        aliquid iure quia ratione.</p>
+
                     <a class="btn btn-primary" href="#contact">Let's talk</a>
                 </div>
 
@@ -71,6 +81,475 @@
                 </div>
             </div>
         </section>
+        <!-- landing section done -->
+
+        <section id="about" class="about">
+            <h1>About</h1>
+            <div class="container">
+                <div class="image">
+                    <img src="./images/sajib.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure veritatis voluptate officia
+                        assumenda facere ipsa magni atque ad cum vitae accusamus a obcaecati illum maiores, soluta
+                        officiis reiciendis molestiae ullam! Deleniti, aut voluptatum quidem quo ea sunt praesentium
+                        repudiandae consequatur odio quis magnam, ab quae a. Doloremque pariatur, cupiditate, quibusdam
+                        aliquam fuga quia voluptas architecto, similique suscipit dolore amet dolorem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum id officia repellat culpa
+                        blanditiis pariatur, aperiam maxime sapiente consequatur nihil nobis veritatis temporibus nulla
+                        iusto. Ut corrupti ab itaque aperiam aliquam laboriosam corporis quo sed eius, maxime quaerat,
+                        amet quidem asperiores excepturi quasi soluta sequi rem quis, facere commodi atque beatae
+                        laudantium? A odit atque officia maxime neque illo veritatis?</p>
+                    <div class="read-more-content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui ab non voluptate illo? Ab ea
+                            quidem laborum omnis aliquam et, sequi, necessitatibus inventore sed voluptate, praesentium
+                            iste ad! Eius mollitia iure eveniet doloremque exercitationem quisquam consequuntur. Totam,
+                            cum? Vitae nam, mollitia tempora sed hic cum error unde non asperiores iste adipisci,
+                            repellat atque quibusdam eaque culpa sapiente nostrum nulla debitis.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque debitis, commodi quas
+                            dolores deleniti voluptatum dolorem explicabo magnam iure veritatis adipisci modi ratione
+                            ipsum hic voluptate esse odio, quod facilis soluta ducimus? Ducimus minus soluta dolore
+                            ipsum magnam nulla nihil repudiandae doloremque dolores sunt libero id illum ullam
+                            consequatur labore laboriosam laudantium voluptate at laborum atque explicabo temporibus,
+                            eum ut.</p>
+                    </div>
+                    <a class="read-more">Show more</a>
+                    <a class="btn btn-primary" href="./images/Resume_sajib_kumar_biswas.pdf" download><i
+                            class="fa-sharp fa-solid fa-download"></i>Download Resume</a>
+                </div>
+            </div>
+        </section>
+        <!-- about section done -->
+
+        <!-- start of skills section -->
+
+        <section class="skills" id="skills">
+            <h1>Skills</h1>
+            <div class="container">
+
+                <div class="skill">
+                    <div class="head">
+                        <div class="left">
+                            <span class="material-symbols-sharp">design_services</span>
+                            <h4>UI/UX Design</h4>
+                        </div>
+                        <span class="material-symbols-sharp">expand_more</span>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <h4>Figma</h4>
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <h5>50%</h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h4>Adobe XD</h4>
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <h5>33%</h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h4>Adobe After Effect</h4>
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <h5>33%</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="head">
+                        <div class="left">
+                            <span class="material-symbols-sharp">code</span>
+                            <h4>Frontend Development</h4>
+                        </div>
+                        <span class="material-symbols-sharp">expand_more</span>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <h4>HTML</h4>
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <h5>85%</h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h4>CSS</h4>
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <h5>75%</h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h4>JavaScript</h4>
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <h5>80%</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="head">
+                        <div class="left">
+                            <span class="material-symbols-sharp">dns</span>
+                            <h4>Backend Development</h4>
+                        </div>
+                        <span class="material-symbols-sharp">expand_more</span>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <h4>Python</h4>
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <h5>50%</h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h4>JavaScript</h4>
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <h5>70%</h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h4>Ruby</h4>
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <h5>33%</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="head">
+                        <div class="left">
+                            <span class="material-symbols-sharp">settings_suggest</span>
+                            <h4>Control Management System</h4>
+                        </div>
+                        <span class="material-symbols-sharp">expand_more</span>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <h4>WordPress</h4>
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <h5>33%</h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h4>Joomla</h4>
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <h5>33%</h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h4>Drupal</h4>
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <h5>33%</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- end of skill section -->
+
+        <!-- start of services section -->
+        <section class="services" id="services">
+            <h1>Services</h1>
+            <div class="container">
+                <div class="service">
+                    <span class="material-symbols-sharp">design_services</span>
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, architecto? Explicabo adipisci
+                        quos modi possimus non quia placeat recusandae atque voluptatibus illum inventore, odit iste
+                        libero consequuntur, cupiditate iure blanditiis.</p>
+                </div>
+                <div class="service">
+                    <span class="material-symbols-sharp">language</span>
+                    <h3>Websites & Web Apps Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, architecto? Explicabo adipisci
+                        quos modi possimus non quia placeat recusandae atque voluptatibus illum inventore, odit iste
+                        libero consequuntur, cupiditate iure blanditiis.</p>
+                </div>
+                <div class="service">
+                    <span class="material-symbols-sharp">developer_mode</span>
+                    <h3>Mobile Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, architecto? Explicabo adipisci
+                        quos modi possimus non quia placeat recusandae atque voluptatibus illum inventore, odit iste
+                        libero consequuntur, cupiditate iure blanditiis.</p>
+                </div>
+            </div>
+        </section>
+        <!-- ====================== end of service section -->
+
+        <!-- ======== start of portfolio section =================== -->
+
+        <section class="recent-work" id="portfolio">
+            <div class="container">
+                <h4>My Recent Works</h4>
+                <h1>Here are Some of My Most Recent Solo Projects.</h1>
+                <div class="projects">
+                    <div class="project">
+                        <div class="thumbnail">
+                            <img src="./images/work1.png" alt="">
+                        </div>
+                        <h2>Complete MERN Stack Social Media Application</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laudantium obcaecati
+                            magni voluptates porro saepe, laboriosam harum! Ipsa commodi blanditiis nostrum iste
+                            accusamus voluptatem esse at? Eos odio itaque doloribus.</p>
+                        <div class="action">
+                            <a href="#">Github</a>
+                            <a href="#">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- end of project -->
+
+
+                    <div class="project">
+                        <div class="thumbnail">
+                            <img src="./images/work2.jpg" alt="">
+                        </div>
+                        <h2>Complete MERN Stack Crypto Mining App</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laudantium obcaecati
+                            magni voluptates porro saepe, laboriosam harum! Ipsa commodi blanditiis nostrum iste
+                            accusamus voluptatem esse at? Eos odio itaque doloribus.</p>
+                        <div class="action">
+                            <a href="#">Github</a>
+                            <a href="#">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- end of project -->
+
+
+                    <div class="project">
+                        <div class="thumbnail">
+                            <img src="./images/work3.png" alt="">
+                        </div>
+                        <h2>Complete MERN Stack Ticket Reservation App</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laudantium obcaecati
+                            magni voluptates porro saepe, laboriosam harum! Ipsa commodi blanditiis nostrum iste
+                            accusamus voluptatem esse at? Eos odio itaque doloribus.</p>
+                        <div class="action">
+                            <a href="#">Github</a>
+                            <a href="#">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- end of project -->
+
+
+                    <div class="project">
+                        <div class="thumbnail">
+                            <img src="./images/work4.png" alt="">
+                        </div>
+                        <h2>Complete MERN Stack Admin Dashboard</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laudantium obcaecati
+                            magni voluptates porro saepe, laboriosam harum! Ipsa commodi blanditiis nostrum iste
+                            accusamus voluptatem esse at? Eos odio itaque doloribus.</p>
+                        <div class="action">
+                            <a href="#">Github</a>
+                            <a href="#">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of project -->
+            </div>
+        </section>
+        <!-- ========= end of recent works =========== -->
+        <!-- ============start of testimonials section === -->
+        <section class="testimonials">
+            <h1>Testimonials</h1>
+            <div class="container swiper mySwiper">
+                <div class="carousel swiper-wrapper">
+                    <div class="testimonial swiper-slide">
+                        <div class="head">
+                            <div class="left">
+                                <img src="./images/profile-1.jpg" alt="">
+                                <div class="info">
+                                    <h4>Bill Gates</h4>
+                                    <h5>Civil engineer</h5>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rerum unde necessitatibus
+                            ad magnam amet aut inventore dolore, excepturi non hic asperiores qui, doloremque velit!</p>
+                    </div>
+                    <!-- end of testimonial -->
+
+                    <div class="testimonial swiper-slide">
+                        <div class="head">
+                            <div class="left">
+                                <img src="./images/profile-3.jpg" alt="">
+                                <div class="info">
+                                    <h4>Henderson</h4>
+                                    <h5>Civil engineer</h5>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rerum unde necessitatibus
+                            ad magnam amet aut inventore dolore, excepturi non hic asperiores qui, doloremque velit!</p>
+                    </div>
+                    <!-- end of testimonial -->
+
+                    <div class="testimonial swiper-slide">
+                        <div class="head">
+                            <div class="left">
+                                <img src="./images/profile-4.jpg" alt="">
+                                <div class="info">
+                                    <h4>Page Denin</h4>
+                                    <h5>Civil engineer</h5>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rerum unde necessitatibus
+                            ad magnam amet aut inventore dolore, excepturi non hic asperiores qui, doloremque velit!</p>
+                    </div>
+                    <!-- end of testimonial -->
+
+                    <div class="testimonial swiper-slide">
+                        <div class="head">
+                            <div class="left">
+                                <img src="./images/profile-5.jpg" alt="">
+                                <div class="info">
+                                    <h4>Happy Queen</h4>
+                                    <h5>Civil engineer</h5>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rerum unde necessitatibus
+                            ad magnam amet aut inventore dolore, excepturi non hic asperiores qui, doloremque velit!</p>
+                    </div>
+                    <!-- end of testimonial -->
+
+                    <div class="testimonial swiper-slide">
+                        <div class="head">
+                            <div class="left">
+                                <img src="./images/profile-6.jpg" alt="">
+                                <div class="info">
+                                    <h4>Ema Watson</h4>
+                                    <h5>Civil engineer</h5>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rerum unde necessitatibus
+                            ad magnam amet aut inventore dolore, excepturi non hic asperiores qui, doloremque velit!</p>
+                    </div>
+                    <!-- end of testimonial -->
+
+                    <div class="testimonial swiper-slide">
+                        <div class="head">
+                            <div class="left">
+                                <img src="./images/profile-7.jpg" alt="">
+                                <div class="info">
+                                    <h4>Beautiful Bird</h4>
+                                    <h5>Civil engineer</h5>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                                <span class="material-symbols-sharp">star</span>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rerum unde necessitatibus
+                            ad magnam amet aut inventore dolore, excepturi non hic asperiores qui, doloremque velit!</p>
+                    </div>
+                    <!-- end of testimonial -->
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+
+
+
+        <!-- swiper js -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                scrollbar: {
+                    el: ".swiper-scrollbar",
+                    hide: true,
+                },
+            });
+        </script>
+
+        <!-- custom js -->
+        <script src="./main.js"></script>
     </body>
 
 </html>
